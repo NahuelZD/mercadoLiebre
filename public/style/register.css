@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Roboto:wght@300&family=Taviraj:wght@200&display=swap');
+
+:root{
+    /* Colores */
+    --amarillo: #EAC926;
+    --azul:#03264C;
+    --celeste:#1259c3;
+    --gris-oscuro:#666;
+    --gris-claro:#ebebeb;
+    --verde: #39b54a;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: var(--amarillo);
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+header img{
+    width: 50%;
+}
+
+
+.form-container{
+    background-color: var(--gris-claro);
+    padding: 20px 10px;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.categories, .profile-user{
+    margin: 10px 0;
+}
+
+.profile-user label{
+    margin-right: 20px;
+}
+
+.categories label{
+    margin-right: 20px;
+}
+
+input{
+    margin: 10px 0;
+}
+
+.input-style{
+    height: 2rem;
+    border-radius: 10px;
+}
+
+.button-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-form button{
+    margin: 5px 15px;
+    padding: 10px 20px;
+    width: 60%;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+footer section{
+    padding: 15px;
+}
+
+footer{
+    text-align: center;
+}
+
+footer i{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.main-login {
+    background-color: var(--gris-claro);
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.form-login input {
+    width: 75%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.button-login {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button-login button {
+    width: 30%;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: purple;
+    color: white;
+    font-size: 1.1rem;
+    transition: all 0.5s;
+}
+
+.button-login button:hover {
+    background-color: #0022AA;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+footer section i {
+    color: var(--gris-oscuro);
+    transition: all 0.5s;
+}
+
+footer section i:hover {
+    color: var(--amarillo);
+}
+
+.main-login {
+    padding: 10% 0;
+}
+
+@media (min-width: 1200px) {
+    .form-container {
+        width: 90vw;
+        margin: auto;
+    }
+
+    header img{
+        width: 500px;
+    }
+
+    .section-footer {
+        display: flex;
+    }
+}

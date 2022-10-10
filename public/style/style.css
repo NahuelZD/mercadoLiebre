@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Roboto:wght@300&family=Taviraj:wght@200&display=swap');
+
+:root {
+    /* Colores */
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+header {
+    background-color: var(--amarillo);
+    padding: 20px;
+}
+
+header img {
+    width: 25%;
+}
+
+.main-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 40%;
+}
+
+.search input {
+    width: 90%;
+    height: 30px;
+    border-radius: 8px;
+}
+
+.search button {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.title-header {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 25%;
+    align-self: center;
+}
+
+.box {
+    margin: 15px;
+    background-color: white;
+    border: solid 1px #ebebeb;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.box:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.burguer-menu {
+    font-size: 2rem;
+    margin: auto;
+    text-align: center;
+}
+
+.burguer-menu i {
+    padding: 10px;
+    color: white;
+    background-color: var(--celeste);
+    border-radius: 10px;
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: var(--gris-oscuro);
+    display: inline-block;
+    padding: 5px 0;
+    margin: 0 10px;
+    transition: all 0.25s;
+}
+
+.main-navbar a:hover {
+    color: white;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.titulares {
+    text-align: center;
+    font-size: 24px;
+}
+
+footer i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--azul);
+}
+
+footer section {
+    padding: 15px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer i {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 12px;
+}
+
+.precios {
+    font-size: 18px;
+}
+
+.descuentos {
+    color: #39b54a;
+}
+
+.box:hover .descripciones{
+    opacity: 100;
+}
+
+.descuentos, .precios, .descripciones {
+    font-size: 16px;
+    margin: 10px 20px;
+}
+
+.descripciones {
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.box-precio {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    background-color: var(--gris-claro);
+    padding-bottom: 20px;
+}
+
+.datos-objetos {
+    padding: 10px;
+    border-top: solid 1px #ebebeb;
+    position: relative;
+}
+
+.datos-objetos i {
+    position: absolute;
+    top: -14px;
+    right: 20px;
+}
+
+.envio {
+    background: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 50%;
+    color: #39b54a;
+    border: solid 1px #39b54a;
+    transition: all 0.5s;
+}
+
+.box:hover .envio {
+    transform: rotate(-90deg);
+}
+
+footer {
+    margin-top: 10px;
+}
+
+footer section i {
+    color: var(--gris-oscuro);
+    transition: all 0.5s;
+}
+
+footer section i:hover {
+    color: var(--amarillo);
+}
+
+@media (max-width: 760px) {
+    .main-header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .title-header {
+        width: 100%;
+    }
+
+    .main-navbar {
+        display: none;
+    }
+
+    header img {
+        width: 50%;
+    }
+
+    .search {
+        width: 50%;
+    }
+
+    .box {
+        width: 75%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 760px) {
+    .burguer-menu {
+        display: none;
+    }
+
+    main section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    section .box {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-header, .main-navbar {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    main {
+        width: 90vw;
+        margin: auto;
+    }
+
+    main section {
+        display: flex;
+    }
+
+    section .box {
+        width: 20%;
+    }
+
+    .section-footer {
+        display: flex;
+    }
+}
