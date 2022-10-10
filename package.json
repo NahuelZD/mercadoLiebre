@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "test": "nodemon app,js",
     "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",
-    "node-modules": "^0.0.1"
+    "node-modules": "^0.0.1",
+    "nodemon": "^2.0.20"
   },
-  "devDependencies": {},
   "description": ""
 }
