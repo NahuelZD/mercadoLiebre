@@ -152,5 +152,6 @@ footer section i:hover {
 
     .section-footer {
         display: flex;
+        justify-content: center;
     }
 }
